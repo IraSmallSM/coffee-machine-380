@@ -1,0 +1,64 @@
+.coffee-machine {
+    border: 2px solid #3c4149;
+    margin-top: 75px;
+    background-color: rgb(60, 65, 75);
+    padding: 20px;
+}
+
+.coffee-list {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+
+.coffee-item img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.coffee-item {
+    background: rgba(88, 44, 33, 0.7);
+    margin: 15px 0;
+    color: white;
+    font-weight: bold;
+    border-radius: calc(75px / 2);
+    cursor: pointer;
+}
+
+.coffee-item:hover {
+    background: rgba(50, 50, 50, 0.7);
+}
+
+.coffee-item span {
+    margin-left: 10px;
+}
+
+.display {
+    background: lightgrey;
+    border: 2px solid #3c4149;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+
+.coffee-cup img {
+    width: 120%;
+    margin-left: -25px;
+}
+
+.atm img {
+      width: 100%;
+}
+
+.btn {
+    margin-top: 20px;
+
+}
+
+.change-box {
+    border: 2px solid #3c4149;
+    background: lightgrey;
+    height: 100px;
+}
