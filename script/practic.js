@@ -1,42 +1,5 @@
 'use strict';
 
-function bayCoffee(name, price, element) {
-  let balanceInput = document.querySelector('input[placeholder="Баланс"]');
-    if(+balanceInput.value < price) {
-    changeDisplayText('Недостаточно средств');
-    balanceInput.style.background = 'yellow';
-  } else {
-    balanceInput.value -= price; 
-    balanceInput.style.background = '';
-    cookCoffee (name, element);
-  }
-}
-
-
-function cookCoffee(name, buttonElement) {
-  changeDisplayText('Ваш ' + name +' готовится');
-  let progressBar = document.querySelector('.progress-bar');
-  
-}
-
-
-function changeDisplayText(text) {
-  let displayText = document.querySelector('.display-text');
-  displayText.innerHTML = text;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 // window.document.documentElement.body
@@ -117,3 +80,36 @@ displayText.innerText = '<b>Готовим кофе</b>';
 //click mouserover mouseup mousedown mousemove - мышь
 //focus chance - для input
 // изменения  с помощью атрибут
+
+
+///--------планирование---------------
+//таймаут
+/*
+let timeout = setTimeout(painBody, 3000, 'green');
+
+let changeButton = document.querySelector('.btn');
+changeButton.onclick = function() {
+  clearTimeout(timeout);
+}
+
+
+function painBody(color) {
+  document.body.style.background = color;
+}
+*/
+
+/*
+let interval = setInterval(trashConsole, 3000);
+
+let changeButton = document.querySelector('.btn');
+changeButton.onclick = function() {
+  clearInterval(interval);
+}
+
+
+function trashConsole() {
+  console.log(Math.random())
+}
+*/
+
+
