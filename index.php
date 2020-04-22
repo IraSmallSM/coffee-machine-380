@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class='row coffee-machine' id='coffee'>
-            <div class='col-5 coffee-list d-flex flex-column justify-content-around'>
+            <div class='col-5 coffee-list d-flex flex-column '>
                 <div class="coffee-item" onclick="bayCoffee('Американо', 50, this)">
                     <img src="img/americano.png" alt="">
                     <span>Американо — 50 руб.</span>
@@ -35,18 +35,20 @@
             </div>
             <div class='col-7 coffee-oper'>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-7 coffeewind21">
                         <div class="display">
                             <p class="display-text">Выберите кофе</p>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                             </div>
                         </div>
-                        <div class="coffee-cup">
-                            <img src="img/americano.png" alt="">
+                        <div class="cont1">
+                            <div class="coffee-cup">
+                                <img class="" src="#" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-5 coffeewind22">
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Баланс" aria-label="Имя получателя" aria-describedby="basic-addon2">
                             <div class="input-group-append">
@@ -54,9 +56,9 @@
                             </div>
                         </div>
                         <div class='atm'>
-                            <img src="img/bill_acc.png" alt="">
+                            <img src="img/1333.svg" alt="">
                         </div>
-                        <button class="btn btn-primary btn-block">Сдача</button>
+                        <button class="btn btn-secondary btn-now btn-block">Сдача</button>
                         <div class="change-box mt-3"></div>
                     </div>
 
