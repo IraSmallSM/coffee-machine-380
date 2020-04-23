@@ -4,6 +4,7 @@ let cupImg = document.querySelector('.coffee-cup');
 cupImg.onclick = takeCoffee;
 let progressBar = document.querySelector('.progress-bar');
 let water = document.querySelector('.water div');
+let balanceInput = document.querySelector('input[placeholder="Баланс"]');
 
 
 
@@ -11,7 +12,7 @@ function bayCoffee(name, price, element) {
     if (state != 'waiting') {
         return;
     }
-    let balanceInput = document.querySelector('input[placeholder="Баланс"]');
+    
     if (+balanceInput.value < price) {
         changeDisplayText('Недостаточно средств');
         balanceInput.style.background = 'yellow';
@@ -120,10 +121,12 @@ let bills =document.querySelectorAll('.bills img');
    //а здесь купюра отлипает (inAtm() - проверка на заданные координаты)
    bill.onmouseup = function() {
      window.onmousemove = null;
-     console.log(inAtm(bill));
+     if(inAtm(bill)) {
+     let billCost = +bill.getAttribute('cost');
+     balanceInput.value = +balanceInput.value + billCost;
+     bill.remove();
+     }
    }
-
-
  }
 
 function inAtm(bill) {
@@ -150,3 +153,63 @@ function inAtm(bill) {
   }
 
 }
+
+
+//-----------------сдача---------------
+
+let changeButton = document.querySelector('.change-btn');
+changeButton.onclick = takeChange;
+
+function takeChange() {
+tossCoin('10');
+}
+
+
+
+function tossCoin(cost) {
+  let changeBox = document.querySelector('.change-box');
+  changeBox.style.position = 'relative';
+  let changeBoxCoords = changeBox.getBoundingClientRect();
+  let randomWidth = getRandomInt(60, changeBoxCoords.width - 100);
+  let randomHeight = getRandomInt(70, changeBoxCoords.height-100);
+
+  let coin = document.createElement('img');
+  coin.setAttribute('src', 'img/10rub.png');
+  coin.style.width = '50px';
+  coin.style.height = '50px';
+    changeBox.prepend(coin);
+  coin.style.position = 'absolute';
+    //changeBox.append(coin);
+  //changeBox.prepend(coin);
+  //changeBox.before(coin);
+  //changeBox.after(coin);
+  //changeBox.replaceWith(coin);
+  coin.style.top = randomHeight + 'px';
+  coin.style.left = randomWidth + 'px';
+}
+
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-5 coffeewind22">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Баланс" aria-label="Имя получателя" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control" placeholder="Баланс" aria-label="Имя получателя" aria-describedby="basic-addon2" readonly="true">
                             <div class="input-group-append">
                                 <span class="input-group-text" id="basic-addon2">&#8381;</span>
                             </div>
@@ -61,8 +61,9 @@
                         <div class='atm'>
                             <img src="img/1333.svg" alt="">
                         </div>
-                        <button class="btn btn-secondary btn-now btn-block">Сдача</button>
+                        <button class="btn btn-secondary btn-now btn-block change-btn">Сдача</button>
                         <div class="change-box mt-3"></div>
+                        
                     </div>
 
                 </div>
@@ -71,9 +72,9 @@
     </div>
 
     <div class="bills">
-        <img src="img/50rub.jpg" alt="">
-        <img src="img/100rub.jpg" alt="">
-        <img src="img/500rub.jpg" alt="">
+        <img src="img/50rub.jpg" cost="50" alt="">
+        <img src="img/100rub.jpg" cost="100" alt="">
+        <img src="img/500rub.jpg" cost="500" alt="">
     </div>
 
 
