@@ -1,6 +1,7 @@
-.container{
+.container {
     min-width: 1300px;
 }
+
 .coffee-machine {
     border: 2px solid #3c4149;
     margin-top: 75px;
@@ -9,16 +10,16 @@
 }
 
 .coffee-list {
-    background-image: url(../img/1144444.svg);
+    background-image: url(../img/1144444.gif);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 120%;
     background-color: #842F1F;
-padding-top: 10px;
+    padding-top: 10px;
     border: 10px solid transparent;
-    border-image: linear-gradient(#A9A9A9, 	#DCDCDC);
-    -moz-border-image: -moz-linear-gradient(#A9A9A9, 	#DCDCDC);
--webkit-border-image: -webkit-linear-gradient(#A9A9A9, 	#DCDCDC);
+    border-image: linear-gradient(#A9A9A9, #DCDCDC);
+    -moz-border-image: -moz-linear-gradient(#A9A9A9, #DCDCDC);
+    -webkit-border-image: -webkit-linear-gradient(#A9A9A9, #DCDCDC);
     border-image-slice: 1;
 }
 
@@ -52,69 +53,100 @@ padding-top: 10px;
     box-shadow: inset 0 0 20px #0000ff;
     padding: 10px;
     min-height: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     margin-top: 20px;
     border: 5px solid transparent;
-    border-image: linear-gradient(#A9A9A9, 	#DCDCDC);
-    -moz-border-image: -moz-linear-gradient(#A9A9A9, 	#DCDCDC);
--webkit-border-image: -webkit-linear-gradient(#A9A9A9, 	#DCDCDC);
+    border-image: linear-gradient(#A9A9A9, #DCDCDC);
+    -moz-border-image: -moz-linear-gradient(#A9A9A9, #DCDCDC);
+    -webkit-border-image: -webkit-linear-gradient(#A9A9A9, #DCDCDC);
     border-image-slice: 1;
 }
+
 .display-text {
     font-weight: bold !important;
     color: white;
-    text-shadow:  0 0 10px #000;
+    text-shadow: 0 0 10px #000;
 }
 
-.coffee-cup img {
-    width: 100%;
-    margin-left: -25px;
-    opacity: 0;
-    margin-top: 100px;
+.coffee-cup {
+    width: 310px;
+    height: 500px;
+    margin-left: 32px;
+    background-image: url(../img/paperGlass.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 310px;
+    background-position-y: bottom;
+    position: absolute;
 }
 
 .atm img {
-      width: 100%;
+    width: 100%;
 }
 
 .btn {
     margin-top: 20px;
 }
+
 .btn-now {
     background-image: linear-gradient(#2F4F4F, #696969);
-    -webkit-linear-gradient(#2F4F4F , #696969);
+    -webkit-linear-gradient(#2F4F4F, #696969);
     font-weight: bold !important;
     box-shadow: 3px 4px 0 #000;
 }
 
 .change-box {
-        height: 220px;
-        background-image: url(../img/11112.svg);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+    height: 220px;
+    background-image: url(../img/11112.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .progress-bar {
-  background-color: #842F1F !important;
+    background-color: #842F1F !important;
 }
 
 .coffeewind21, .coffeewind22 {
     border: 10px solid transparent;
-    border-image: linear-gradient(#A9A9A9, 	#DCDCDC);
-    -moz-border-image: -moz-linear-gradient(#A9A9A9, 	#DCDCDC);
--webkit-border-image: -webkit-linear-gradient(#A9A9A9, 	#DCDCDC);
+    border-image: linear-gradient(#A9A9A9, #DCDCDC);
+    -moz-border-image: -moz-linear-gradient(#A9A9A9, #DCDCDC);
+    -webkit-border-image: -webkit-linear-gradient(#A9A9A9, #DCDCDC);
     border-image-slice: 1;
     background-image: linear-gradient(#842F1F, #5E1704);
-    -webkit-linear-gradient(#842F1F , #5E1704);
-
+    -webkit-linear-gradient(#842F1F, #5E1704);
 }
+
 .cont1 {
-background-image: url(../img/11111.svg);
-background-size: 100% cover;
-background-repeat: no-repeat;
-min-height: 600px;
+    background-image: url(../img/11111.svg);
+    background-size: 100% cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
 }
 
 .input-group {
     margin-top: 20px;
+}
+
+.bills {
+    margin-left: 200px;
+}
+
+.bills img {
+    margin-top: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.water {
+    height: 50px;
+    transform: rotate(90deg);
+    position: relative;
+    margin-top: 237px;
+
+}
+.water div {
+    width: 0px;
+    height: 200px;
+    background-image: linear-gradient(#6f4e37, #fdfff5 15%, #473223 50%);
+
 }

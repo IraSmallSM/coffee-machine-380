@@ -43,8 +43,11 @@
                             </div>
                         </div>
                         <div class="cont1">
-                            <div class="coffee-cup">
-                                <img class="" src="#" alt="">
+                            <div class="coffee-cup d-none">
+
+                                <div class="water">
+                                    <div class="mh-100"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -67,7 +70,11 @@
         </div>
     </div>
 
-
+    <div class="bills">
+        <img src="img/50rub.jpg" alt="">
+        <img src="img/100rub.jpg" alt="">
+        <img src="img/500rub.jpg" alt="">
+    </div>
 
 
 
