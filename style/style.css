@@ -148,6 +148,6 @@
 .water div {
     width: 0px;
     height: 200px;
-    background-image: linear-gradient(#6f4e37, #fdfff5 15%, #473223 50%);
+    background-image: linear-gradient(-180deg, #6f4e37, #fdfff5 15%, #473223 50%);
 
 }
